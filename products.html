@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات - TechZoom</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                TechZoom
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html" class="active">محصولات</a></li>
+                    <li><a href="compare.html">مقایسه</a></li>
+                    <li><a href="reviews.html">نظرات</a></li>
+                    <li><a href="about.html">درباره</a></li>
+                    <li><a href="contact.html">تماس</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <a href="compare.html" title="مقایسه"><i class="fas fa-balance-scale"></i></a>
+                <a href="#" title="علاقه‌مندی‌ها"><i class="fas fa-heart"></i></a>
+                <div class="theme-toggle" id="themeToggle"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Header -->
+    <section class="hero">
+        <div class="container">
+            <h1>محصولات تکنولوژی</h1>
+            <p>بررسی و مقایسه 40 محصول برتر تکنولوژی با قیمت‌های واقعی بازار ایران</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category">دسته‌بندی</label>
+                <select id="category" class="filter-input">
+                    <option value="all">همه محصولات</option>
+                    <option value="phone">گوشی</option>
+                    <option value="laptop">لپ‌تاپ</option>
+                    <option value="console">کنسول</option>
+                    <option value="headphone">هدفون</option>
+                    <option value="tablet">تبلت</option>
+                    <option value="watch">ساعت هوشمند</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="budget">بودجه (میلیون تومان)</label>
+                <input type="range" id="budget" class="filter-input" min="5" max="120" value="120">
+                <div id="budget-value" style="text-align: center; margin-top: 5px; color: var(--primary); font-weight: 600;">120 میلیون</div>
+            </div>
+            
+            <div class="filter-group">
+                <label for="rating">حداقل امتیاز</label>
+                <select id="rating" class="filter-input">
+                    <option value="0">همه</option>
+                    <option value="4">4 ستاره و بالاتر</option>
+                    <option value="4.5">4.5 ستاره و بالاتر</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="brand">برند</label>
+                <select id="brand" class="filter-input">
+                    <option value="all">همه برندها</option>
+                    <option value="apple">اپل</option>
+                    <option value="samsung">سامسونگ</option>
+                    <option value="sony">سونی</option>
+                    <option value="xiaomi">شیائومی</option>
+                    <option value="huawei">هواوی</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-mobile-alt"></i>
+            گوشی‌های هوشمند
+        </h2>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">جدید</div>
+                <div class="product-img">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Apple iPhone 15 Pro Max</h3>
+                    <div class="product-rating">★★★★★ (4.7)</div>
+                    <div class="product-price">115,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>صفحه‌نمایش: 6.7 اینچ Super Retina XDR</li>
+                            <li>پردازنده: A17 Pro</li>
+                            <li>دوربین: 48 مگاپیکسل</li>
+                            <li>حافظه: 256 گیگابایت</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge">پرفروش</div>
+                <div class="product-img">
+                    <i class="fab fa-samsung"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+                    <div class="product-rating">★★★★★ (4.8)</div>
+                    <div class="product-price">105,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>صفحه‌نمایش: 6.8 اینچ Dynamic AMOLED</li>
+                            <li>پردازنده: Snapdragon 8 Gen 3</li>
+                            <li>دوربین: 200 مگاپیکسل</li>
+                            <li>قلم: دارد</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-badge">تخفیف</div>
+                <div class="product-img">
+                    <i class="fab fa-xiaomi"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Xiaomi 14 Ultra</h3>
+                    <div class="product-rating">★★★★☆ (4.6)</div>
+                    <div class="product-price">78,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>صفحه‌نمایش: 6.73 اینچ 2K AMOLED</li>
+                            <li>پردازنده: Snapdragon 8 Gen 3</li>
+                            <li>دوربین: 50 مگاپیکسل</li>
+                            <li>باتری: 5300 mAh</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">
+            <i class="fas fa-laptop"></i>
+            لپ‌تاپ
+        </h2>
+        
+        <div class="products-grid">
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-badge">پرفروش</div>
+                <div class="product-img">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">MacBook Air 15" M2</h3>
+                    <div class="product-rating">★★★★☆ (4.5)</div>
+                    <div class="product-price">75,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>صفحه‌نمایش: 15.3 اینچ Liquid Retina</li>
+                            <li>پردازنده: Apple M2</li>
+                            <li>حافظه: 8GB RAM</li>
+                            <li>ذخیره‌سازی: 256GB SSD</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-badge">جدید</div>
+                <div class="product-img">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Dell XPS 13 Plus</h3>
+                    <div class="product-rating">★★★★☆ (4.4)</div>
+                    <div class="product-price">68,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>صفحه‌نمایش: 13.4 اینچ FHD+ OLED</li>
+                            <li>پردازنده: Intel Core i7-1280P</li>
+                            <li>حافظه: 16GB RAM</li>
+                            <li>ذخیره‌سازی: 512GB SSD</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">
+            <i class="fas fa-gamepad"></i>
+            کنسول‌های بازی
+        </h2>
+        
+        <div class="products-grid">
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-badge">پرفروش</div>
+                <div class="product-img">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sony PlayStation 5</h3>
+                    <div class="product-rating">★★★★★ (4.9)</div>
+                    <div class="product-price">32,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>پردازنده: AMD Zen 2 3.5GHz</li>
+                            <li>گرافیک: AMD RDNA 2</li>
+                            <li>حافظه: 16GB GDDR6</li>
+                            <li>ذخیره‌سازی: 825GB SSD</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-badge">جدید</div>
+                <div class="product-img">
+                    <i class="fab fa-xbox"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Xbox Series X</h3>
+                    <div class="product-rating">★★★★☆ (4.7)</div>
+                    <div class="product-price">28,000,000 تومان</div>
+                    <div class="product-specs">
+                        <ul>
+                            <li>پردازنده: AMD Zen 2 3.8GHz</li>
+                            <li>گرافیک: AMD RDNA 2</li>
+                            <li>حافظه: 16GB GDDR6</li>
+                            <li>ذخیره‌سازی: 1TB SSD</li>
+                        </ul>
+                    </div>
+                    <button class="btn" disabled>در حال توسعه</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TechZoom</h3>
+                    <p>پلتفرم جامع مقایسه و بررسی محصولات تکنولوژی و گیمینگ با قیمت‌های روز بازار ایران.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> گوشی‌های هوشمند</a></li>
+                        <li><a href="#"><i class="fas fa-laptop"></i> لپ‌تاپ و کامپیوتر</a></li>
+                        <li><a href="#"><i class="fas fa-gamepad"></i> کنسول‌های بازی</a></li>
+                        <li><a href="#"><i class="fas fa-headphones"></i> هدفون و ایرپاد</a></li>
+                        <li><a href="#"><i class="fas fa-tablet-alt"></i> تبلت</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>امکانات</h3>
+                    <ul class="footer-links">
+                        <li><a href="compare.html"><i class="fas fa-balance-scale"></i> مقایسه محصولات</a></li>
+                        <li><a href="#"><i class="fas fa-tag"></i> تخفیف‌ها و پیشنهادها</a></li>
+                        <li><a href="#"><i class="fas fa-rocket"></i> محصولات جدید</a></li>
+                        <li><a href="reviews.html"><i class="fas fa-comments"></i> نظرات کاربران</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>تماس با ما</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@techzoom.ir</li>
+                        <li><i class="fas fa-phone"></i> 021-12345678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 1403-1404 TechZoom. تمامی حقوق محفوظ است.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+                      </html>
